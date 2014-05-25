@@ -21,8 +21,8 @@ module MailRobber
       begin
         params = { app_name: Rails.application.class.parent,
                    token:    @@token }
-        Net::HTTP.post_form(URI.parse("http://mailrobber.com/api/apps/create/"), params)
-        Launchy.open("http://mailrobber.com/#/#{@@token}")
+        Net::HTTP.post_form(URI.parse("http://www.mailrobber.com/api/apps/create/"), params)
+        Launchy.open("http://www.mailrobber.com/#/#{@@token}")
       rescue
         raise 'Couldn\'t create app within MailRobber service. Check config/initializers/mail_robber.rb'
       end

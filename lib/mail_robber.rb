@@ -45,7 +45,7 @@ module MailRobber
     def self.intercept_letter(params)
       Rails.logger.debug "MailRobber intercepting email"
       begin
-        Net::HTTP.post_form(URI.parse('http://mailrobber.com/api/emails/create'), params)
+        Net::HTTP.post_form(URI.parse('http://www,mailrobber.com/api/emails/create'), params)
       rescue
         raise 'Couldn\'t send email to MailRobber'
       end
