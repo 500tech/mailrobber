@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ilya Gelman"]
   spec.email         = ["ilyagelman@ilyagelman.ru"]
   spec.description   = %q{Simple email testing for Rails}
-  spec.summary       = %q{No summary}
+  spec.summary       = %q{Test your emails from any environment via mailrobber.com service}
   spec.homepage      = "http://mailrobber.com"
   spec.license       = "MIT"
 
