@@ -12,7 +12,8 @@ module MailRobber
                to:          message.to,
                cc:          message.cc,
                bcc:         message.bcc,
-               subject:     message.subject }
+               subject:     message.subject,
+               environment: Rails.env }
 
     if message.multipart?
       # If message is HTML-only and has attachments,
