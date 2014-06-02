@@ -38,7 +38,7 @@ module MailRobber
     end
     params[:attachments] = Marshal::dump(attachments)
 
-    intercept_letter(params) if self.config.enabled
+    intercept_letter(params)
     block_delivery(message) if self.config.block_delivery
   end
 

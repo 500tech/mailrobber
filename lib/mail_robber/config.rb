@@ -6,7 +6,7 @@ module MailRobber
   def self.configure
     self.config ||= Configuration.new
     yield(config)
-    ActionMailer::Base.register_interceptor(MailRobber)
+    ActionMailer::Base.register_interceptor(MailRobber) if config.enabled
   end
 
   class Configuration
